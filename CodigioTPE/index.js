@@ -1,5 +1,5 @@
 //Con esto resuelve todas las peticiones a la api.
-function getUrlSpecific(done, id) {
+/*function getUrlSpecific(done, id) {
   const ids = id !== null ? "/" + id : "";
   const results = fetch(
     `https://my-json-server.typicode.com/SEBASTIANULIBARRI/DiarioDigital/products${ids}`
@@ -9,7 +9,7 @@ function getUrlSpecific(done, id) {
     .then((data) => {
       done(data);
     });
-}
+}*/
 
 getUrlSpecific((data) => {
   data.forEach((element) => {
