@@ -41,11 +41,6 @@ h1 {
   text-align: center;
 }
 
-.logo>img {
-  width: 5em;
-  max-width: 100px;
-}
-
 .barras {
   padding: 10px;
   color: var(--color-principal);
@@ -62,9 +57,13 @@ h1 {
 
 /*Logo*/
 header>div>a>img {
-  width: 100px;
-  height: 100px;
-  padding: 5px;
+  width: 80px;
+  height: 80px;
+  padding: 5px 10px 0;
+}
+
+header>div>a>img:hover {
+  transform: rotate('45');
 }
 
 /*Header Nav*/
@@ -123,6 +122,12 @@ main {
   width: 100%;
 }
 
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 article {
   display: flex;
   flex-direction: column;
@@ -136,6 +141,31 @@ article {
   flex-direction: inherit;
 }
 
+/*tabla*/
+.tabla {
+  display: flex;
+  flex-direction: column;
+}
+
+td {
+  border: 1px solid #000;
+  text-align: center;
+
+}
+
+col {
+  background-color: #c70039;
+
+}
+
+.filas {
+  background-color: rgba(255, 255, 0, 0.432);
+}
+
+#detalle-tabla {
+  display: none;
+}
+
 /*footer*/
 .footer-contacto {
   margin-top: 50px;
@@ -143,8 +173,16 @@ article {
   justify-content: center;
 }
 
+footer span {
+  color: #99002e;
+}
+
 .footer-contacto a {
   margin: 10px 30px;
+}
+
+.footer-contacto img {
+  width: 32px;
 }
 
 footer div:last-child {
@@ -189,6 +227,10 @@ a {
     display: none;
   }
 
+  #detalle-tabla {
+    display: block;
+  }
+
   header {
     display: flex;
     flex-direction: column;
@@ -229,7 +271,6 @@ a {
   .main-variedades a {
     width: 49%;
   }
-
 
 }
 
