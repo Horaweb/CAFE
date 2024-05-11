@@ -1,0 +1,250 @@
+/*DEFINION VARIABALES*/
+:root {
+  --color-principal: #ffffff;
+  --color-cambio: #fffef2;
+  --color-secundario: #5d001e;
+  --color-fondo: #ffffff;
+  --color-extra: #c40e69bb;
+  --color-grad: linear-gradient(to right,
+      tomato 0%,
+      gold 50%,
+      var(--color-extra) 100%);
+  --color-new: linear-gradient(45deg,
+      var(--color-extra),
+      var(--color-secundario),
+      var(--color-text),
+      var(--color-subtitulo));
+  --color-icon: #c70039;
+  --color-btn: #99002e;
+  --color-titulo: #5d001e;
+  --color-subtitulo: #000;
+  --color-text: #99002e;
+  --font-title: "Stalemate";
+  --font-subtitle: "Vujahday Script";
+}
+
+/*Header*/
+header {
+  padding-bottom: 2px;
+  background: linear-gradient(-45deg,
+      rgba(75, 73, 73, 0.067),
+      var(--color-secundario),
+      var(--color-btn),
+      #000);
+  background-color: var(--color-secundario);
+}
+
+h1 {
+  font-family: var(--font-title);
+  color: var(--color-principal);
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.logo>img {
+  width: 5em;
+  max-width: 100px;
+}
+
+.barras {
+  padding: 10px;
+  color: var(--color-principal);
+}
+
+.encabezado-mobile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+  margin-bottom: 2px;
+}
+
+/*Logo*/
+header>div>a>img {
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+
+/*Header Nav*/
+nav {
+  margin-top: -15px;
+}
+
+nav>ul {
+  width: 95%;
+  padding-inline-start: 10px;
+}
+
+nav>ul>li:hover {
+  background-color: var(--color-extra);
+}
+
+li {
+  list-style: none;
+}
+
+nav>ul>li {
+  border: 1px solid black;
+  justify-content: center;
+
+  padding: 10px 20px;
+  display: flex;
+
+}
+
+nav>ul>li a {
+  text-decoration: none;
+  padding: 10px 30%;
+  color: var(--color-cambio);
+  opacity: 0.7;
+}
+
+/*Body*/
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.oculto {
+  display: none;
+}
+
+.boton_variedades>a>img {
+  width: 95%;
+}
+
+.boton_variedades>a {
+  margin: 10px;
+  display: block;
+  width: 100%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.quienes-somos {
+  align-items: inherit;
+  display: inherit;
+  flex-direction: inherit;
+}
+
+/*footer*/
+.footer-contacto {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-contacto a {
+  margin: 10px 30px;
+}
+
+footer div:last-child {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer div:last-child ul {
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+  align-items: center;
+}
+
+footer div:last-child ul li {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: var(--color-extra);
+}
+
+/*pagina variedades*/
+.main-variedades img {
+  width: 95%;
+}
+
+/*media*/
+@media only screen and (min-width: 425px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 660px) {
+  .barras {
+    display: none;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  .encabezado-mobile {
+    justify-content: flex-start;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  .navegacion {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  nav>ul {
+    display: flex;
+  }
+
+  nav>ul>li {
+    border: 1px solid rgba(0, 0, 0, 0.26);
+    border-radius: 10%;
+    width: 100%;
+    margin: 1px;
+  }
+
+  /*variedades*/
+  .main-variedades div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .main-variedades a {
+    width: 49%;
+  }
+
+
+}
+
+@media only screen and (min-width: 886px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navegacion {
+    margin-right: 10px;
+  }
+
+  nav>ul>li {
+    margin: 2px;
+  }
+}
